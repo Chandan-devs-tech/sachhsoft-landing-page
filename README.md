@@ -40,7 +40,7 @@ This project is a landing page for SachhSoft, built using React, TypeScript, and
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/sachhsoft-landing-page.git
+   git clone https://github.com/Chandan-devs-tech/sachhsoft-landing-page.git
    ```
 
 2. Navigate to the project directory:
