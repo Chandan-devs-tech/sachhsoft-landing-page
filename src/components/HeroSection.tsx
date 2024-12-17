@@ -40,6 +40,7 @@ const ServiceRow: React.FC<ServiceRowProps> = ({ items }) => (
   </ServiceRowWrapper>
 );
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const Quote: React.FC<QuoteProps> = ({ author, imageSrc }) => (
   <QuoteWrapper>
     <QuoteContent>
