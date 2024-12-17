@@ -53,7 +53,7 @@ export const ServicesApp: React.FC<ServicesAppProps> = ({
 }) => {
   return (
     <PanelContainer noPadding={noPadding}>
-      <ContentWrapper noPadding={noPadding}>
+      <ContentWrapper>
         <ServicesHeader
           title="Our Services"
           iconSrc="https://cdn.builder.io/api/v1/image/assets/8daf534316604d9cae29e22c036504a0/4e18331c3692cce806ae59b27c57342576e806ae13fab6e9b24ebe4324bda9b5?apiKey=8daf534316604d9cae29e22c036504a0&"
@@ -132,7 +132,7 @@ const MenuIcon = styled.img`
   border-radius: 0px 0px 0px 0px;
 `;
 
-const ContentWrapper = styled.div<{ noPadding: boolean }>`
+const ContentWrapper = styled.div`
   background: var(
     --Primary-Primary-01,
     linear-gradient(91deg, #5f01bd 5%, #3c0475 115.73%)
@@ -142,7 +142,7 @@ const ContentWrapper = styled.div<{ noPadding: boolean }>`
   width: 100%;
   flex-direction: column;
   align-items: start;
-  padding: ${(props) => (props.noPadding ? "0" : "3px 0 20px 10px")};
+  padding: 3px 0 20px 10px;
 `;
 
 const PrimaryServicesRow = styled.div`
