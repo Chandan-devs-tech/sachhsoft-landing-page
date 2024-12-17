@@ -17,16 +17,16 @@ interface QuoteProps {
   imageSrc: string;
 }
 
-interface ServiceCardProps {
-  icon: string;
-  title: string;
-  tags: string[];
-}
+// interface ServiceCardProps {
+//   icon: string;
+//   title: string;
+//   tags: string[];
+// }
 
-interface StatCardProps {
-  value: string;
-  label: string;
-}
+// interface StatCardProps {
+//   value: string;
+//   label: string;
+// }
 
 const ServiceItem: React.FC<ServiceItemProps> = ({ label }) => (
   <ServiceItemWrapper>{label}</ServiceItemWrapper>
@@ -40,7 +40,7 @@ const ServiceRow: React.FC<ServiceRowProps> = ({ items }) => (
   </ServiceRowWrapper>
 );
 
-const Quote: React.FC<QuoteProps> = ({ quote, author, imageSrc }) => (
+const Quote: React.FC<QuoteProps> = ({ author, imageSrc }) => (
   <QuoteWrapper>
     <QuoteContent>
       <QuoteImage loading="lazy" src={imageSrc} alt="" />
@@ -433,38 +433,38 @@ const HeaderImage = styled.img`
   border-radius: 0px;
 `;
 
-const BottomSection = styled.div`
-  align-self: end;
-  margin-top: 12px;
-  width: 724px;
-  max-width: 100%;
-  display: flex;
-  gap: 20px;
-  @media (max-width: 991px) {
-    flex-direction: column;
-    margin-top: 76px;
-    align-self: center;
-  }
-`;
+// const BottomSection = styled.div`
+//   align-self: end;
+//   margin-top: 12px;
+//   width: 724px;
+//   max-width: 100%;
+//   display: flex;
+//   gap: 20px;
+//   @media (max-width: 991px) {
+//     flex-direction: column;
+//     margin-top: 76px;
+//     align-self: center;
+//   }
+// `;
 
-const StatisticWrapper = styled.div`
-  border-radius: 8px;
-  background-color: rgba(254, 114, 13, 1);
-  display: flex;
-  flex-grow: 1;
-  color: rgba(24, 12, 31, 1);
-  padding: 12px 24px 56px;
-  font: 800 48px Avenir, sans-serif;
-  @media (max-width: 991px) {
-    font-size: 36px;
-    padding: 0 20px;
-    width: 173px;
-  }
-`;
+// const StatisticWrapper = styled.div`
+//   border-radius: 8px;
+//   background-color: rgba(254, 114, 13, 1);
+//   display: flex;
+//   flex-grow: 1;
+//   color: rgba(24, 12, 31, 1);
+//   padding: 12px 24px 56px;
+//   font: 800 48px Avenir, sans-serif;
+//   @media (max-width: 991px) {
+//     font-size: 36px;
+//     padding: 0 20px;
+//     width: 173px;
+//   }
+// `;
 
-const MobileServicesWrapper = styled.div`
-  padding: 0;
-  margin-top: 20px;
-`;
+// const MobileServicesWrapper = styled.div`
+//   padding: 0;
+//   margin-top: 20px;
+// `;
 
 export default HeroSection;
