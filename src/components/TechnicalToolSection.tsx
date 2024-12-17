@@ -9,13 +9,6 @@ import googleCloudSvg from "../assets/google-cloud.svg";
 export const TechnicalToolsetSection: React.FC = () => {
   const [isMobile, setIsMobile] = React.useState(window.innerWidth <= 767);
 
-  const logos = [
-    { src: shopifySvg, alt: "Shopify" },
-    { src: awsSvg, alt: "AWS" },
-    { src: wordpressSvg, alt: "WordPress" },
-    { src: googleCloudSvg, alt: "Google Cloud" },
-  ];
-
   React.useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 767);
