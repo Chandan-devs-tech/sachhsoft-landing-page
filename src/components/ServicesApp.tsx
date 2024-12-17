@@ -53,7 +53,7 @@ export const ServicesApp: React.FC<ServicesAppProps> = ({
 }) => {
   return (
     <PanelContainer noPadding={noPadding}>
-      <ContentWrapper>
+      <ContentWrapper noPadding={noPadding}>
         <ServicesHeader
           title="Our Services"
           iconSrc="https://cdn.builder.io/api/v1/image/assets/8daf534316604d9cae29e22c036504a0/4e18331c3692cce806ae59b27c57342576e806ae13fab6e9b24ebe4324bda9b5?apiKey=8daf534316604d9cae29e22c036504a0&"
