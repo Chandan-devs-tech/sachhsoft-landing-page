@@ -8,7 +8,12 @@ interface BlogPost {
   readTime: string;
 }
 
-interface BlogCardProps extends BlogPost {}
+interface BlogCardProps extends BlogPost {
+  imageUrl: string;
+  title: string;
+  date: string;
+  readTime: string;
+}
 
 interface BlogHeaderProps {
   subtitle: string;
